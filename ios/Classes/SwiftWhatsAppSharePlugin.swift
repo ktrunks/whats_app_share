@@ -6,8 +6,8 @@ public class SwiftWhatsAppSharePlugin:  NSObject, FlutterPlugin {
                                          private var result: FlutterResult?
 
                                          public static func register(with registrar: FlutterPluginRegistrar) {
-                                           let channel = FlutterMethodChannel(name: "whatsapp_share", binaryMessenger: registrar.messenger())
-                                           registrar.addMethodCallDelegate(SwiftWhatsappShare(), channel: channel)
+                                           let channel = FlutterMethodChannel(name: "whats_app_share", binaryMessenger: registrar.messenger())
+                                           registrar.addMethodCallDelegate(SwiftWhatsAppSharePlugin(), channel: channel)
                                          }
 
                                          public func handle(_ call: FlutterMethodCall, result: @escaping FlutterResult) {
